@@ -44,7 +44,7 @@ export default function Settings() {
         name="flairGeneratorApiKey"
         label="Flair Generator API Key:"
         onChange={handleFlairInput}
-        value={typeof flairState !== 'undefined' ? flairState : value.piecesOfFlair || ''}
+        value={flairState || value?.flairGeneratorApiKey || ''}
         placeholder="Provide any value here, no API key is actually required."
       />
       <p className="text-xs text-green-500">Provide any value here, no API key is actually required.</p>
