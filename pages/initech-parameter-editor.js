@@ -1,5 +1,12 @@
 import { useState } from 'react';
-import { useUniformMeshLocation, Input, LoadingOverlay, Callout, Button } from '@uniformdev/mesh-sdk-react';
+import {
+  useUniformMeshLocation,
+  Input,
+  LoadingOverlay,
+  Callout,
+  Button,
+  CmsEntrySearch,
+} from '@uniformdev/mesh-sdk-react';
 
 export default function InitechCanvasParameterEditor() {
   const { value, setValue, metadata } = useUniformMeshLocation();
@@ -36,7 +43,7 @@ function FlairMeme({ flairId, imageUrl, onImageChange }) {
 
     try {
       const response = await fetch(
-        `https://flair-meme-generator.netlify.app/.netlify/functions/generate-flair?numPieces=${
+        `https://initech-mesh-services.netlify.app/.netlify/functions/generate-flair?numPieces=${
           numFlair || 37
         }`
       );
