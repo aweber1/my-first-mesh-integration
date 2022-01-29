@@ -5,15 +5,16 @@ export default function Settings() {
   // `useUniformMeshLocation` is a React hook that provides convenient access to
   // getting and setting the current location value.
   const { value, setValue } = useUniformMeshLocation();
-  const [flairState, setFlairState] = useState('');
+  const [formValues, setFormValues] = useState({});
   const [isSaving, setIsSaving] = useState(false);
   const [error, setError] = useState();
 
   const handleSaveClick = async () => {
-    // on save, we use the `flairState` value to populate the new value for
+    // on save, we use the form values state to populate the new value for
     // the Settings location.
     const newSettings = {
-      flairGeneratorApiKey: flairState,
+      apiKey: formValues.apiKey,
+      projectId: formValues.projectId,
     };
 
     // set a flag before invoking the async setValue function so that we can
@@ -31,8 +32,11 @@ export default function Settings() {
     }
   };
 
-  const handleFlairInput = (e) => {
-    setFlairState(e.target.value);
+  const handleFormInputChange = (e) => {
+    setFormValues((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
   };
 
   return (
@@ -41,13 +45,19 @@ export default function Settings() {
       <LoadingOverlay isActive={isSaving} />
       {error ? <Callout type="error">{error.message}</Callout> : null}
       <Input
-        name="flairGeneratorApiKey"
-        label="Flair Generator API Key:"
-        onChange={handleFlairInput}
-        value={flairState || value?.flairGeneratorApiKey || ''}
-        placeholder="Provide any value here, no API key is actually required."
+        name="apiKey"
+        label="API Key:"
+        onChange={handleFormInputChange}
+        value={formValues.apiKey || value?.apiKey || ''}
+        placeholder="API Key"
       />
-      <p className="text-xs text-green-500">Provide any value here, no API key is actually required.</p>
+      <Input
+        name="projectId"
+        label="Project ID:"
+        onChange={handleFormInputChange}
+        value={formValues.projectId || value?.projectId || ''}
+        placeholder="Project Id"
+      />
       <Button type="button" buttonType="secondary" onClick={handleSaveClick} disabled={isSaving}>
         Save
       </Button>

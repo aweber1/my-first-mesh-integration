@@ -8,7 +8,7 @@ import {
   CmsEntrySearch,
 } from '@uniformdev/mesh-sdk-react';
 
-export default function InitechCanvasParameterEditor() {
+export default function InitechMemeCanvasParameterEditor() {
   const { value, setValue, metadata } = useUniformMeshLocation();
 
   const handleImageChange = async (flairId, imageUrl) => {

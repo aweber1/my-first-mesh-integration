@@ -1,6 +1,6 @@
 import { useUniformMeshLocation } from '@uniformdev/mesh-sdk-react';
 
-export default function InitechCanvasParameterConfig() {
+export default function InitechMemeCanvasParameterConfig() {
   const { value: config, setValue: setConfig } = useUniformMeshLocation();
 
   const handleInputChange = async (e) => {
