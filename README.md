@@ -9,26 +9,32 @@ Full tutorial for creating and configuring this integration is here: https://www
 Add an external integration in the Uniform dashboard and use the following for the `Location Configuration` field:
 ```
 {
-  "baseLocationUrl": "http://localhost:4020",
   "locations": {
+    "canvas": {
+      "parameterTypes": [
+        {
+          "type": "initech-meme",
+          "editorUrl": "/initech-meme-parameter-editor",
+          "displayName": "Initech Meme Generator",
+          "configureUrl": "/initech-meme-parameter-config"
+        },
+        {
+          "type": "initech-cms",
+          "editorUrl": "/initech-cms-parameter-editor",
+          "displayName": "Initech CMS",
+          "configureUrl": "/initech-cms-parameter-config"
+        }
+      ]
+    },
     "install": {
       "description": [
-        "GatherContent + Uniform Mesh"
+        "Initech + Uniform Mesh will never give you a case of the Mondays!"
       ]
     },
     "settings": {
       "url": "/settings"
-    },
-    "canvas": {
-      "parameterTypes": [
-        {
-          "type": "gathercontent-items",
-          "editorUrl": "/canvas-item-selector-editor",
-          "displayName": "GatherContent Items",
-          "configureUrl": "/canvas-item-selector-config"
-        }
-      ]
     }
-  }
+  },
+  "baseLocationUrl": "http://localhost:3000"
 }
 ```
