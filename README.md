@@ -2,7 +2,7 @@
 
 This is a sample integration with a fictitious service named Initech (https://en.wikipedia.org/wiki/Office_Space).
 
-Full tutorial for creating and configuring this integration is here: https://www.notion.so/uniformdev/1-Create-your-first-Mesh-integration-ae91789172e04275a0f8b3c102be4c3c
+Full tutorial for creating and configuring this integration is here: https://uniformdev.notion.site/1-Create-your-first-Mesh-integration-ae91789172e04275a0f8b3c102be4c3c
 
 ## Location configuration in Uniform
 
