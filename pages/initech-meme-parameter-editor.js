@@ -1,12 +1,5 @@
 import { useState } from 'react';
-import {
-  useUniformMeshLocation,
-  Input,
-  LoadingOverlay,
-  Callout,
-  Button,
-  CmsEntrySearch,
-} from '@uniformdev/mesh-sdk-react';
+import { useUniformMeshLocation, Input, LoadingOverlay, Callout, Button } from '@uniformdev/mesh-sdk-react';
 
 export default function InitechMemeCanvasParameterEditor() {
   const { value, setValue, metadata } = useUniformMeshLocation();
