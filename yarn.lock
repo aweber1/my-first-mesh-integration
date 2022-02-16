@@ -58,11 +58,6 @@
     "@babel/helper-validator-identifier" "^7.14.9"
     to-fast-properties "^2.0.0"
 
-"@datadog/framepost@0.3.1":
-  version "0.3.1"
-  resolved "https://registry.yarnpkg.com/@datadog/framepost/-/framepost-0.3.1.tgz#bb4910b894cfeb7d423aa60084ddd2bb3c29216e"
-  integrity sha512-MxK/stjASi0Djy5OS/teux7rfU6ffT4W3XrlFN5Xs1ZoOjZ3O+y9SOrOv9GKs+8TlL2l6UTiDWRfFUQZlrxJ1g==
-
 "@eslint/eslintrc@^1.0.5":
   version "1.0.5"
   resolved "https://registry.yarnpkg.com/@eslint/eslintrc/-/eslintrc-1.0.5.tgz#33f1b838dbf1f923bfa517e008362b78ddbbf318"
@@ -303,25 +298,24 @@
     "@typescript-eslint/types" "5.10.1"
     eslint-visitor-keys "^3.0.0"
 
-"@uniformdev/mesh-sdk-react@^14.1.1-alpha.0":
-  version "14.1.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/mesh-sdk-react/-/mesh-sdk-react-14.1.1-alpha.0.tgz#79c2cde25d9acbcda19c380d734ba381a445b412"
-  integrity sha512-myU95saOy984FJT36L0Xtf4ft4YD37p6a+Yolrgid1FSOy1AKCT0NKSV3UFWku42a6FA1F8Kq84jYQw/t1o2Eg==
+"@uniformdev/mesh-sdk-react@^14.1.1-alpha.1":
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/@uniformdev/mesh-sdk-react/-/mesh-sdk-react-14.1.1.tgz#eac08cd7c1304c2eb9493ce5a5a46f0d64384000"
+  integrity sha512-r04LVYJeiKDS9ZFGqSKAykQ4j+fW1YyuT1JqDG4uf82VylI+H4tZRIQ5mng12/JtYoRObmFVMa0pVeLW7Qqm9w==
   dependencies:
-    "@uniformdev/mesh-sdk" "^14.1.1-alpha.0"
+    "@uniformdev/mesh-sdk" "^14.1.1"
     react-beautiful-dnd "13.1.0"
     react-use "17.3.2"
     reakit "1.3.11"
     timeago.js "4.0.2"
     uuid "8.3.2"
 
-"@uniformdev/mesh-sdk@^14.1.1-alpha.0":
-  version "14.1.1-alpha.0"
-  resolved "https://registry.yarnpkg.com/@uniformdev/mesh-sdk/-/mesh-sdk-14.1.1-alpha.0.tgz#ff895d1e77c7566fb3f32a69146250c53ddd257e"
-  integrity sha512-YV0VW/nPfGCefO5qpPFAQr5OLkgOIL8Zxe+7WCTiQZ0JTNZ8FCORSMsmXl/bGqNd9JRQa1Tpwf/exdf0HLHnWA==
+"@uniformdev/mesh-sdk@^14.1.1":
+  version "14.1.1"
+  resolved "https://registry.yarnpkg.com/@uniformdev/mesh-sdk/-/mesh-sdk-14.1.1.tgz#44057ef7bf351fbbdd53b483bb64bf2999026681"
+  integrity sha512-6C8s1nyrlADY0+NpEo/flK+Jsj6uGZ97nAWkDb/RjoOEgxCVMcECfdwfBlKIkeAqPpm7X2Q1nxojHxBONLyDYQ==
   dependencies:
-    "@datadog/framepost" "0.3.1"
-    post-robot "10.0.46"
+    post-robot "10.0.44"
 
 "@xobotyi/scrollbar-width@^1.9.5":
   version "1.9.5"
@@ -1871,10 +1865,10 @@ picomatch@^2.0.4, picomatch@^2.2.1, picomatch@^2.2.3:
   resolved "https://registry.yarnpkg.com/picomatch/-/picomatch-2.3.1.tgz#3ba3833733646d9d3e4995946c1365a67fb07a42"
   integrity sha512-JU3teHTNjmE2VCGFzuY8EXzCDVwEqB2a8fsIvwaStHhAWJEeVd1o1QD80CU6+ZdEXXSLbSsuLwJjkCBWqRQUVA==
 
-post-robot@10.0.46:
-  version "10.0.46"
-  resolved "https://registry.yarnpkg.com/post-robot/-/post-robot-10.0.46.tgz#39cea5b51033729390fc7c90be3285cd285f0377"
-  integrity sha512-EgVJiuvI4iRWDZvzObWes0X/n8olWBEJWxlSw79zmhpgkigX8UsVL4VOBhVtoJKwf0Y9qP9g2zOONw1rv80QbA==
+post-robot@10.0.44:
+  version "10.0.44"
+  resolved "https://registry.yarnpkg.com/post-robot/-/post-robot-10.0.44.tgz#98cf63be8a3cf39e73001c69f78f8b74a7f97d8f"
+  integrity sha512-LbA2E7gw/MkntjFtT2EPUrapIPCN/M9orKT3OTQC9A87raT5nmsL0nsHAr1AMZS0UoZxB6Z4K6OlnTxAgxXidw==
   dependencies:
     belter "^1.0.41"
     cross-domain-safe-weakmap "^1.0.1"
